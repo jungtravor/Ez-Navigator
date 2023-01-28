@@ -16,6 +16,5 @@ function jqi18nLoad(language){
 }
 
 $(document).ready(function () {
-    // jqi18nLoad('en-US');
     jqi18nLoad(navigator.language);
 })

@@ -10,11 +10,11 @@
                     "name": "vscode",
                     "links": [
                         {
-                            "name": "github_link",
+                            "name": "github-link",
                             "url": "https://github.com/coder/code-server"
                         },
                         {
-                            "name": "code_server_docs",
+                            "name": "code-server-docs",
                             "url": "https://coder.com/docs/code-server/latest"
                         }
                     ],
@@ -22,6 +22,74 @@
                         {
                             "name": "vscode",
                             "url": "http://local.code.kokolink.cn:8080/"
+                        }
+                    ]
+                },
+                {
+                    "name": "portainer",
+                    "links": [
+                        {
+                            "name": "portainer-docs",
+                            "url": "https://docs.portainer.io/"
+                        }
+                    ],
+                    "entry": [
+                        {
+                            "name": "portainer",
+                            "url": "https://mac.kokolink.cn/portainer/"
+                        }
+                    ]
+                },
+                {
+                    "name": "ddnsgo",
+                    "links": [
+                        {
+                            "name": "github-link",
+                            "url": "https://github.com/jeessy2/ddns-go"
+                        }
+                    ],
+                    "entry": [
+                        {
+                            "name": "ddnsgo",
+                            "url": "http://local.mac.kokolink.cn:9876/"
+                        }
+                    ]
+                },
+                {
+                    "name": "syncthing",
+                    "links": [
+                        {
+                            "name": "docs",
+                            "url": "https://docs.syncthing.net/"
+                        }
+                    ],
+                    "entry": [
+                        {
+                            "name": "syncthing",
+                            "url": "https://mac.kokolink.cn/syncthing/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "configurations",
+            "cards":[
+                {
+                    "name": "acme.sh",
+                    "links": [
+                        {
+                            "name": "github-link",
+                            "url": "https://github.com/acmesh-official/acme.sh"
+                        }
+                    ]
+                },
+                {
+                    "name": "frp",
+                    "links": [
+                        {
+                            "name": "github-link",
+                            "url": "https://github.com/fatedier/frp"
                         }
                     ]
                 }
