@@ -1,9 +1,6 @@
-var jqi18nLoad = function (language){
-    let language_i18n = language.replace(/-/i,'_');
-    let props = {
-        titles: ['dashboard', 'configuration']
-    }
-    console.log('language: ', language)
+function jqi18nLoad(language){
+    let language_i18n = language.replace(/-/i,'_').substring(0, 2)
+    console.log('language: ', language_i18n)
     $.i18n.properties({
         name: 'description',
         path: 'settings/i18n/',
@@ -11,14 +8,14 @@ var jqi18nLoad = function (language){
         language_i18n,
         async: true,
         callback: function() {
-            $.i18n.prop('title')
-            console.log(title)
+            $("[data-locale]").each(function () {
+                $(this).html($.i18n.prop($(this).data("locale")));
+            });
         }
     });
 }
 
-console.log($.fn.jquery)
-
 $(document).ready(function () {
+    // jqi18nLoad('en-US');
     jqi18nLoad(navigator.language);
 })

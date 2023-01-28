@@ -1,0 +1,31 @@
+{
+    "name": "Macbook Air Server",
+    "description": "",
+    "icon": "",
+    "groups": [
+        {
+            "name": "dashboard",
+            "cards": [
+                {
+                    "name": "vscode",
+                    "links": [
+                        {
+                            "name": "github_link",
+                            "url": "https://github.com/coder/code-server"
+                        },
+                        {
+                            "name": "code_server_docs",
+                            "url": "https://coder.com/docs/code-server/latest"
+                        }
+                    ],
+                    "entry": [
+                        {
+                            "name": "vscode",
+                            "url": "http://local.code.kokolink.cn:8080/"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
