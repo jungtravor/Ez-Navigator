@@ -7,13 +7,13 @@
         <script src="./static/jquery-3.6.3.min.js"></script>
         <script src="./static/jquery.i18n.properties.js"></script>
         <script src="./static/bootstrap.bundle.min.js"></script>
-        <script src="./settings/i18n/support.js"></script>
         <script src="./src/index.js"></script>
         <style type="text/css">
             body { background-color:rgb(28, 61, 110); color: #fff; }
             p > a { color: #fff }
             .container { margin-bottom: 3rem }
             .container > h3 { margin-top: 3rem }
+            .title { margin-top: 4rem }
             .card { padding: .5rem; border: none; background-color: transparent }
             .card-body { border-radius: 1rem; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
             .card-body a { color: #fff; width: fit-content; }
@@ -28,93 +28,8 @@
     </head>
     <body>
         <div class="container">
-            <h1 data-locale="title" style="margin-top: 4rem"></h1>
-            <p class="description" data-locale="description"></p>
-            <h3> - <span data-locale="title_dashboard"></span></h3>
-            <div class="row">
-                <div class="card col-12 col-md-6 col-xl-4">
-                    <div class="card-body" style="background-color: rgb(42, 143, 173);">
-                        <div class="card-body-header">
-                            <h5 class="card-title">VS Code</h5>
-                            <p class="card-text">
-                                The Visual Studio Code WEB server is provided by code-server. <br>
-                                Internal port 8080. Passcode saved in 1Password.
-                            </p>
-                            <a href="https://github.com/coder/code-server" target="_blank">GitHub link</a>
-                            <a href="https://coder.com/docs/code-server/latest" target="_blank">code-server docs</a>
-                        </div>
-                        <div class="card-body-footer">
-                            <a href="http://local.code.kokolink.cn:8080" target="_blank" class="btn btn-link">VS Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-6 col-xl-4">
-                    <div class="card-body" style="background-color: rgb(134, 52, 114);">
-                        <div class="card-body-header">
-                            <h5 class="card-title">Portainer</h5>
-                            <p class="card-text">
-                                Manage docker containers in MacBook Air. <br>
-                                The https port is 9443. No configuration is needed.
-                            </p>
-                            <a href="https://docs.portainer.io" target="_blank">Portainer Docs</a>
-                        </div>
-                        <div class="card-body-footer">
-                            <a href="https://mac.kokolink.cn/portainer/" target="_blank" class="btn btn-link">Portainer</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-6 col-xl-4">
-                    <div class="card-body" style="background-color: rgb(36, 133, 103);">
-                        <div class="card-body-header">
-                            <h5 class="card-title">DDNS-Go</h5>
-                            <p class="card-text">Automatic DDNS deployment dashboard.</p>
-                            <a href="https://github.com/jeessy2/ddns-go" target="_blank">GitHub link</a>
-                        </div>
-                        <div class="card-body-footer">
-                            <a href="http://local.mac.kokolink.cn:9876" target="_blank" class="btn btn-link">DDNS-Go</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-6 col-xl-4">
-                    <div class="card-body" style="background-color: rgb(170, 82, 41);">
-                        <div class="card-body-header">
-                            <h5 class="card-title">Syncthing</h5>
-                            <p class="card-text">Sync things on devices running different platform.</p>
-                            <a href="https://docs.syncthing.net/" target="_blank">Documentation</a>
-                        </div>
-                        <div class="card-body-footer">
-                            <a href="https://mac.kokolink.cn/syncthing/" target="_blank" class="btn btn-link">Syncthing</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 id="titles.configuration"> - Configurations</h3>
-            <div class="row">
-                <div class="card col-12 col-md-6 col-xl-4">
-                    <div class="card-body" style="background-color: rgb(150, 39, 54);">
-                        <div class="card-body-header">
-                            <h5 class="card-title">acme.sh</h5>
-                            <p class="card-text">
-                                Automatic HTTPS certificate puller.<br>
-                                No dashboard needed. Docs are important to set acme.sh.
-                            </p>
-                            <a href="https://github.com/acmesh-official/acme.sh" target="_blank">GitHub link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-6 col-xl-4">
-                    <div class="card-body" style="background-color: #8daac8;">
-                        <div class="card-body-header">
-                            <h5 class="card-title">frp</h5>
-                            <p class="card-text">
-                                A famous reverse proxy to expose a local server<br>
-                                frpc.ini could be found in folder /conf of the frp project.
-                            </p>
-                            <a href="https://github.com/fatedier/frp" target="_blank">GitHub link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 class="title"></h1>
+            <p class="description"></p>
         </div>
     </body>
 </html>
