@@ -53,6 +53,7 @@ function jqi18nLoad(language){
         language_i18n,
         async: true,
         callback: function() {
+            document.title = $.i18n.prop('title')
             $('.title').html($.i18n.prop('title'))
             $('.description').html($.i18n.prop('description'))
             $("[data-locale]").each(function () {
