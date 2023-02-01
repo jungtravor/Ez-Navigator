@@ -143,7 +143,7 @@ function loadCards(settings){
  */
 $(document).ready(function () {
     $.ajax({
-        url:"/settings/entries.json",
+        url:"./settings/entries.json",
         type:"get",
         dataType:"json",
         success: (res) => loadCards(res),
